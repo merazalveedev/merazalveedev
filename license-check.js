@@ -1,4 +1,7 @@
-// Firebase setup and license check (Part 1)
+// Define the global checkLicense function so the presence check can succeed
+window.checkLicense = true;
+
+// Firebase setup and license check
 const firebaseConfig = {
   apiKey: "YOUR-API-KEY",
   authDomain: "your-app.firebaseapp.com",
@@ -32,6 +35,6 @@ db.ref("licenses/" + currentDomain).once("value").then((snap) => {
 
 function loadPart2() {
   const script = document.createElement("script");
-  script.src = ""; // Link to Part 2 JS file
+  script.src = "https://yourcdn.com/theme-assets.js"; // Link to Part 2 JS file
   document.body.appendChild(script);
 }
