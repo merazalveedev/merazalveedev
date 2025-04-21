@@ -3,13 +3,13 @@ window.checkLicense = true;
 
 // Firebase setup and license check
 const firebaseConfig = {
-  apiKey: "YOUR-API-KEY",
-  authDomain: "your-app.firebaseapp.com",
-  databaseURL: "https://your-app.firebaseio.com",
-  projectId: "your-app",
-  storageBucket: "your-app.appspot.com",
-  messagingSenderId: "YOUR-MESSAGING-ID",
-  appId: "YOUR-APP-ID"
+  apiKey: "AIzaSyBGmAclzNQtsnIjV6nMYOts1Xft_I52NwQ",
+  authDomain: "themelicensedb.firebaseapp.com",
+  projectId: "themelicensedb",
+  storageBucket: "themelicensedb.firebasestorage.app",
+  messagingSenderId: "854131343734",
+  appId: "1:854131343734:web:1f29ed156de8e5f6457a57",
+  measurementId: "G-GYNV4PCC12"
 };
 
 const app = firebase.initializeApp(firebaseConfig);
@@ -35,6 +35,6 @@ db.ref("licenses/" + currentDomain).once("value").then((snap) => {
 
 function loadPart2() {
   const script = document.createElement("script");
-  script.src = "https://yourcdn.com/theme-assets.js"; // Link to Part 2 JS file
+  script.src = "https://raw.githubusercontent.com/merazalveedev/merazalveedev/refs/heads/main/theme-assets.js"; // Link to Part 2 JS file
   document.body.appendChild(script);
 }
